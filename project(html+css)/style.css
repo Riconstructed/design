@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400..800&family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --hovercol: #ffffff;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+   
+   
+   align-items: center;
+   margin: 0px 20px;
+   font-family: "Baloo Da 2", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 600;
+
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    background-color: #FFD9CD;
+   
+}
+img{
+    margin: -6px 0px;
+    margin-right: 10px;
+    margin-left: 0px;
+}
+li{
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+}
+li:hover{
+color: var(--hovercol);
+filter: saturate(red);
+.ghar{
+    fill: var(--hovercol);
+  
+}
+
+}
+.pen{
+    position: relative;
+    overflow: hidden;
+    width: 100%; height: 100%;
+    
+   
+}
+ .ghar{
+    
+    fill: black;
+    margin: -4px 0px;
+    transition: all 0.3s ease-in-out;
+}
+
+.hover{
+    transition: all 0.5s ease-in-out;
+}
+
+.arrow:hover{
+    .hover{
+     opacity: 0;
+    }
+}
+.loginpage{
+    
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+
+   
+    height: 100vh;
+    
+    
+    background-image: url("data:image/svg+xml,%3Csvg width='100%' height='100%'  viewBox='0 0 1876 883' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.5' d='M0.5 232.5L499.813 353.297C730.971 409.22 1187.24 249.207 950 232.5V232.5V232.5C791.249 221.32 934.28 113.377 1090.08 145.825C1322.9 194.314 1494.5 268.472 1607.87 335.754C1712.55 397.884 1796.21 494.695 1828.38 612.103C1838.7 649.802 1842.33 685.695 1832.5 712C1800 799 1482 940.5 1141.5 853.5C801 766.5 1643.5 615 1392.5 458.5C1141.5 302 1646.5 -43.5 1770.5 23.5C1894.5 90.5 1894.5 209.5 1832.5 264.5C1770.5 319.5 433 -128 428 41C423 210 681.5 602.5 1141.5 458.5C1601.5 314.5 1348 853.5 1087 853.5C826 853.5 785.5 794 845.5 712C905.5 630 918 471 714 458.5C510 446 242 307.5 316.5 165.5C391 23.5 -99 68 80 344C259 620 703.5 401.5 594.5 575.5C485.5 749.5 659.5 866.5 217 836.5C-225.5 806.5 182.5 595 217 600C251.5 605 301 836 694 774' stroke='%23D5AC0A' stroke-width='4'/%3E%3C/svg%3E%0A"), linear-gradient(to bottom right, var(--tw-gradient-stops));
+    --tw-gradient-from: #F71818;
+    --tw-gradient-to: #f74c18;
+    --tw-gradient-stops: var(--tw-gradient-from),var(--tw-gradient-to);
+    display: flex;
+justify-content: flex-start;
+gap: 100px;
+align-items: center;
+position: relative;
+flex-direction: column;
+flex-wrap: wrap;
+    
+}
+.welcome{
+
+   margin-top: 60px;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.welcometothe{
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 60px;
+    animation: welcometo 1s ease-out 0.1s 1 ;
+}
+@keyframes welcometo{
+    from{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to{
+        opacity: 100%;
+        transform: translateX(px);
+    }
+
+}
+.welcome span:nth-child(2){
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-size: 60px;
+}
+.solution{
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 30px;
+    color: aliceblue;
+    text-align: center;
+    margin-top: -66px;
+}
+.getstarted{
+    padding: 10px;
+    border: 1px solid black;
+    background-color: #ff0a0a41;
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 30px;
+    color: aliceblue;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.getstarted:hover{
+    background-color: #eb2626ab;
+    color: #572929;
+}
+@media only screen and (max-width:400px){
+    .info{
+        display: none;
+    
+    }
+    
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+        background-color: #FFD9CD;
+       
+    }
+
+}
